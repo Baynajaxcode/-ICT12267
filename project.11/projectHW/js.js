@@ -180,18 +180,38 @@ function jumpToImage(index) {
 function addToCart(productId) {
     const allAvailable = [...allProducts, ...bestSellers, ...promotions];
     const item = allAvailable.find(p => p.id === productId);
+    
     if (item) {
-        cart.push({...item});
+        // ตรวจสอบว่ามีสินค้านี้ในตะกร้าหรือยัง
+        const targetItem = cart.find(cartItem => cartItem.id === productId);
+        
+        if (targetItem) {
+            // ถ้ามีแล้ว ให้เพิ่มจำนวน (quantity)
+            targetItem.quantity += 1;
+        } else {
+            // ถ้ายังไม่มี ให้เพิ่มสินค้าเข้าไปพร้อมกำหนด quantity เริ่มต้นที่ 1
+            cart.push({ ...item, quantity: 1 });
+        }
+        
         updateCartCount();
         updateCartUI();
-        bootstrap.Modal.getInstance(document.getElementById('productDetailModal')).hide();
-        alert(`เพิ่ม "${item.name}" แล้ว!`);
+        
+        // ปิด Modal รายละเอียดสินค้า
+        const modalElement = document.getElementById('productDetailModal');
+        const modalInstance = bootstrap.Modal.getInstance(modalElement);
+        if (modalInstance) modalInstance.hide();
+        
+        alert(`เพิ่ม "${item.name}" ลงตะกร้าแล้ว!`);
     }
 }
 
 function updateCartCount() {
     const el = document.getElementById("cart-count");
-    if (el) el.innerText = cart.length;
+    if (el) {
+        // รวมจำนวน quantity ของสินค้าทุกชิ้นในตะกร้า
+        const totalQty = cart.reduce((sum, item) => sum + item.quantity, 0);
+        el.innerText = totalQty;
+    }
 }
 
 function updateCartUI() {
@@ -205,15 +225,20 @@ function updateCartUI() {
     } else {
         let total = 0;
         cartList.innerHTML = cart.map((item, index) => {
-            total += item.price;
+            const itemTotal = item.price * item.quantity; // ราคารวมของชิ้นนี้
+            total += itemTotal;
+            
             return `
                 <div class="d-flex align-items-center mb-3 pb-3 border-bottom text-start">
                     <img src="${item.images[0]}" width="50" height="50" class="rounded me-3" style="object-fit:cover">
                     <div class="flex-grow-1">
                         <div class="fw-bold small text-truncate" style="max-width:150px">${item.name}</div>
-                        <div class="text-primary small">฿${item.price.toLocaleString()}</div>
+                        <div class="text-muted small">จำนวน: ${item.quantity} ชิ้น</div>
+                        <div class="text-primary small">฿${itemTotal.toLocaleString()}</div>
                     </div>
-                    <button class="btn btn-sm text-danger" onclick="removeFromCart(${index})"><i class="fas fa-trash"></i></button>
+                    <button class="btn btn-sm text-danger" onclick="removeFromCart(${index})">
+                        <i class="fas fa-trash"></i>
+                    </button>
                 </div>`;
         }).join('');
         totalPriceEl.innerText = '฿' + total.toLocaleString();
