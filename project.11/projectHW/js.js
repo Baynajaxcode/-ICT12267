@@ -114,6 +114,7 @@ function showProductDetail(productId) {
     }
 }
 
+// แก้ไขส่วนนี้ในไฟล์ js.js
 function updateDetailContent(item) {
     const detailContainer = document.getElementById('product-detail-content');
     if (!detailContainer) return;
@@ -150,8 +151,18 @@ function updateDetailContent(item) {
                     <label class="small fw-bold text-muted mb-2 d-block">รายละเอียดสินค้า</label>
                     <p class="text-secondary small mb-0">${item.description || 'ไม่มีข้อมูลรายละเอียด'}</p>
                 </div>
+                
+                <div class="mb-4">
+                    <label class="small fw-bold text-muted mb-2 d-block">จำนวน</label>
+                    <div class="input-group mb-3" style="width: 130px;">
+                        <button class="btn btn-outline-secondary rounded-start-pill" type="button" onclick="this.parentNode.querySelector('input').stepDown()">-</button>
+                        <input type="number" id="buy-quantity" class="form-control text-center" value="1" min="1">
+                        <button class="btn btn-outline-secondary rounded-end-pill" type="button" onclick="this.parentNode.querySelector('input').stepUp()">+</button>
+                    </div>
+                </div>
+
                 <div class="d-grid gap-2 mt-4">
-                    <button class="btn btn-primary btn-lg rounded-pill fw-bold py-3 shadow-sm" onclick="addToCart(${item.id})">
+                    <button class="btn btn-primary btn-lg rounded-pill fw-bold py-3 shadow-sm" onclick="addToCartWithQty(${item.id})">
                         <i class="fas fa-cart-plus me-2"></i>เพิ่มลงตะกร้า
                     </button>
                 </div>
@@ -174,6 +185,34 @@ function jumpToImage(index) {
     const allAvailable = [...allProducts, ...bestSellers, ...promotions];
     const item = allAvailable.find(p => p.id === currentProductId);
     updateDetailContent(item);
+}
+
+function addToCartWithQty(productId) {
+    const qtyInput = document.getElementById('buy-quantity');
+    const quantity = parseInt(qtyInput.value) || 1; // ดึงค่าจาก Input
+    
+    const allAvailable = [...allProducts, ...bestSellers, ...promotions];
+    const item = allAvailable.find(p => p.id === productId);
+    
+    if (item) {
+        const targetItem = cart.find(cartItem => cartItem.id === productId);
+        
+        if (targetItem) {
+            targetItem.quantity += quantity; // เพิ่มจำนวนตามที่ระบุ
+        } else {
+            cart.push({ ...item, quantity: quantity }); // เพิ่มสินค้าใหม่พร้อมจำนวนที่ระบุ
+        }
+        
+        updateCartCount();
+        updateCartUI();
+        
+        // ปิด Modal
+        const modalElement = document.getElementById('productDetailModal');
+        const modalInstance = bootstrap.Modal.getInstance(modalElement);
+        if (modalInstance) modalInstance.hide();
+        
+        alert(`เพิ่ม "${item.name}" จำนวน ${quantity} ชิ้น ลงตะกร้าแล้ว!`);
+    }
 }
 
 // ================== 5. ระบบตะกร้า & จ่ายเงิน (คงเดิม) ==================
