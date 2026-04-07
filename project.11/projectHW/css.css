@@ -24,8 +24,17 @@ body {
     color: var(--primary-blue);
     text-decoration: none;
     transition: var(--transition);
+    position: relative; /* สร้างขอบเขตให้รูป */
+    display: inline-block;
 }
-.logo span { color: #212529; }
+
+.logo img {
+    height: 50px; /* ปรับตัวเลขนี้ตามความใหญ่ที่ต้องการ เช่น 50px, 80px, 100px */
+    width: auto;  /* เพื่อให้รูปไม่เบี้ยว */
+    position: absolute;       /* ทำให้รูปลอยออกมา ไม่ดัน Navbar */
+    top: -23px;
+}
+
 .logo:hover { opacity: 0.8; }
 
 /* Hero Slider */
@@ -188,6 +197,13 @@ body {
 .footer-professional .logo {
     font-size: 0.95rem !important;
     margin-bottom: 4px !important; /* บีบระยะบรรทัดให้ชิดกัน */
+}
+
+/* เพิ่มเพื่อคุมขนาดรูปภาพโลโก้ใน footer */
+.footer-professional .logo img {
+    height: 35px !important; /* ปรับตัวเลขความสูงตามความชอบ */
+    width: auto !important;
+    display: inline-block;
 }
 
 .footer-professional p, 
