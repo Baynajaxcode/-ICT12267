@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CleanHome - Premium Cleaning Supplies</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top py-3 shadow-sm">
+        <div class="container">
+            <a class="navbar-brand logo" href="#">Clean<span>Home</span></a>
+            <div class="ms-auto d-flex align-items-center order-lg-3">
+                <div class="cart-icon position-relative py-2 me-3" style="cursor: pointer;" onclick="showCart()">
+                    <i class="fa-solid fa-cart-shopping fs-5 text-secondary"></i>
+                    <span id="cart-count" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary badge-pulse">0</span>
+                </div>
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link px-3 active" href="#">หน้าแรก</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link px-3 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">สินค้า</a>
+                        <ul class="dropdown-menu border-0 shadow-lg custom-dropdown">
+                            <li><a class="dropdown-item" href="#product-recommend-section"><i class="fa-solid fa-star text-primary me-2"></i>สินค้าแนะนำ</a></li>
+                            <li><a class="dropdown-item" href="#best-seller-section"><i class="fa-solid fa-fire text-danger me-2"></i>สินค้ายอดฮิต</a></li>
+                            <li><hr class="dropdown-divider opacity-25"></li>
+                            <li><a class="dropdown-item" href="#promotion-section"><i class="fa-solid fa-tag text-success me-2"></i>โปรโมชั่น</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#promotion-section">โปรโมชั่น</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#contact-section">ติดต่อเรา</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="homeCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="1"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="4000">
+                <div class="banner-slide" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://lh-assets.lh.co.th/images/original/living-tips/651646d2-aa71-468f-a49d-885197e527ec/d61e6577-3229-41e6-810b-cb032446a45f.webp');">
+                    <div class="container h-100 d-flex align-items-center">
+                        <div class="text-white hero-content">
+                            <h1 class="display-3 fw-bold mb-3">สะอาดกว่าที่เคย</h1>
+                            <p class="fs-5 mb-4 opacity-75">นวัตกรรมอุปกรณ์ทำความสะอาดที่ทำให้งานบ้านของคุณง่ายขึ้น</p>
+                            <a href="#product-recommend-section" class="btn btn-primary btn-lg rounded-pill px-5 py-3 shadow">ช้อปเลยตอนนี้</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="4000">
+                <div class="banner-slide" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1528740561666-dc2479dc08ab?auto=format&fit=crop&w=1600&q=80');">
+                    <div class="container h-100 d-flex align-items-center">
+                        <div class="text-white hero-content">
+                            <h1 class="display-3 fw-bold mb-3">โปรแรงแซงทุกดีล</h1>
+                            <p class="fs-5 mb-4 opacity-75">ลดสูงสุด 70% สำหรับอุปกรณ์งานบ้านเกรดส่งออก</p>
+                            <a href="#promotion-section" class="btn btn-outline-light btn-lg rounded-pill px-5 py-3">ดูโปรโมชั่น</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main class="container my-5">
+        <section id="product-recommend-section" class="scroll-margin">
+            <div class="row align-items-center mb-5 gy-4">
+                <div class="col-lg-6">
+                    <h2 class="fw-bold m-0 section-title">สินค้าทั้งหมด</h2>
+                </div>
+                <div class="col-lg-6">
+                    <div class="input-group search-container shadow-sm ms-auto">
+                        <span class="input-group-text bg-white border-0 ps-4" style="cursor: pointer;" onclick="searchProducts()"><i class="fa-solid fa-magnifying-glass text-muted"></i></span>
+                        <input type="text" id="searchInput" class="form-control border-0 py-3" placeholder="ค้นหาสิ่งที่ต้องการ...">
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4 mb-5" id="all-products-container"></div>
+        </section>
+
+        <hr class="my-5 opacity-25">
+
+        <section id="best-seller-section" class="text-center mb-5 py-3 scroll-margin">
+            <span class="badge bg-primary-soft text-primary px-3 py-2 rounded-pill mb-3">BEST SELLER</span>
+            <h2 class="fw-bold">สินค้ายอดฮิตประจำเดือน</h2>
+            <div class="title-underline mx-auto mb-4"></div>
+            <div class="row g-4" id="best-seller-container"></div>
+        </section>
+
+        <hr class="my-5 opacity-25">
+
+        <section id="promotion-section" class="py-5 bg-white rounded-4 shadow-sm mb-5 scroll-margin">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <span class="badge bg-danger text-white px-3 py-2 rounded-pill mb-3">HOT PROMOTION</span>
+                    <h2 class="fw-bold">โปรโมชั่นประจำเดือน</h2>
+                    <p class="text-muted">ลดกระหน่ำสูงสุด 70% เฉพาะเดือนนี้เท่านั้น!</p>
+                </div>
+                <div class="row g-4" id="promotion-container"></div>
+            </div>
+        </section>
+    </main>
+
+    <div class="modal fade" id="cartModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-0 shadow-lg" style="border-radius: 25px;">
+                <div class="modal-header border-0 bg-light">
+                    <h5 class="modal-title fw-bold"><i class="fa-solid fa-basket-shopping me-2 text-primary"></i>ตะกร้าของคุณ</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body px-4">
+                    <div id="cart-items-list"></div>
+                    <hr class="opacity-25">
+                    <div class="d-flex justify-content-between align-items-center py-2">
+                        <span class="fw-bold fs-5">ราคารวมทั้งหมด:</span>
+                        <span id="cart-total-price" class="fw-bold fs-4 text-primary">฿0</span>
+                    </div>
+                </div>
+                <div class="modal-footer border-0 p-4 pt-0">
+                    <button type="button" class="btn btn-light rounded-pill px-4 me-auto" data-bs-dismiss="modal">ซื้อต่อ</button>
+                    <button type="button" class="btn btn-primary rounded-pill px-5 fw-bold" onclick="openPaymentModal()">ชำระเงิน</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="productDetailModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content border-0" style="border-radius: 20px; overflow: visible;">
+                <div class="modal-body p-0" id="product-detail-content"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="paymentModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-0 shadow-lg" style="border-radius: 25px;">
+                <div class="modal-header border-0">
+                    <h5 class="fw-bold"><i class="fa-solid fa-wallet me-2 text-primary"></i>ชำระเงิน</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <ul class="nav nav-pills nav-fill mb-4 bg-light rounded-pill p-1" id="paymentTab">
+                        <li class="nav-item"><button class="nav-link active rounded-pill fw-bold" data-bs-toggle="pill" data-bs-target="#credit-card-tab">บัตรเครดิต</button></li>
+                        <li class="nav-item"><button class="nav-link rounded-pill fw-bold" data-bs-toggle="pill" data-bs-target="#cod-tab">ปลายทาง</button></li>
+                        <li class="nav-item"><button class="nav-link rounded-pill fw-bold" data-bs-toggle="pill" data-bs-target="#qr-tab">QR Code</button></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane fade show active" id="credit-card-tab">
+                            <div class="mb-3">
+                                <label class="form-label small fw-bold">เลขบัตร</label>
+                                <input type="text" class="form-control rounded-pill border-light-subtle" placeholder="0000 0000 0000 0000">
+                            </div>
+                            <div class="row g-3">
+                                <div class="col-6"><label class="form-label small fw-bold">วันหมดอายุ</label><input type="text" class="form-control rounded-pill border-light-subtle" placeholder="MM/YY"></div>
+                                <div class="col-6"><label class="form-label small fw-bold">CVV</label><input type="password" class="form-control rounded-pill border-light-subtle" placeholder="***"></div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="cod-tab">
+                            <label class="form-label small fw-bold text-primary">ที่อยู่จัดส่ง</label>
+                            <textarea class="form-control rounded-4 border-light-subtle" rows="3" placeholder="ระบุเลขที่บ้าน, ถนน, จังหวัด..."></textarea>
+                        </div>
+                        <div class="tab-pane fade text-center" id="qr-tab">
+                            <p class="small fw-bold mb-2">สแกนชำระผ่าน PromptPay</p>
+                            <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=CleanHome" class="img-thumbnail border-0 shadow-sm" width="150">
+                        </div>
+                    </div>
+                    <button class="btn btn-primary w-100 rounded-pill fw-bold py-3 mt-4 shadow" onclick="confirmPayment()">ยืนยันการสั่งซื้อ</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="contact-section" class="bg-dark text-white pt-5 pb-4">
+        <div class="container">
+            <div class="row gy-4 align-items-center text-center text-md-start">
+                <div class="col-md-4">
+                    <a class="navbar-brand logo text-white mb-2 d-block" href="#">Clean<span class="text-primary">Home</span></a>
+                    <p class="small text-muted">ผู้นำอุปกรณ์ทำความสะอาดครบวงจร</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="social-group d-flex justify-content-center gap-3">
+                        <a href="https://www.facebook.com/SPUsripatumuniversity     " target="_blank" class="social-btn text-white text-decoration-none">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/sripatum_spu/" target="_blank" class="social-btn text-white text-decoration-none">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://page.line.me/djk4611y target="_blank" class="social-btn text-white text-decoration-none">
+                            <i class="fab fa-line"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 text-md-end">
+                    <span class="small d-block text-muted">ติดต่อเรา</span>
+                    <a href="tel:021234567" class="text-primary fw-bold text-decoration-none fs-5">02-123-4567</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js.js"></script>
+</body>
+</html>
