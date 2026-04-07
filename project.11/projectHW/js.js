@@ -2,30 +2,78 @@
 const allProducts = [
     { 
         id: 1, 
-        name: "ไม้ถูพื้นรีดน้ำ Microfiber", 
-        price: 350, 
+        name: "หุ่นยนต์ดูดฝุ่น รุ่น RV-X15N (สีขาว)", 
+        price: 6990, 
         category: "เครื่องครัว", 
         images: [
-            "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=600",
-            "https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?w=600",
-            "https://images.unsplash.com/photo-1584622781564-1d9876a13d00?w=600"
+            "finalPJimg/1-1.webp",
+            "finalPJimg/1-2.webp",
+            "finalPJimg/1-3.webp"
         ],
-        description: "ผ้าม็อบไมโครไฟเบอร์ ซับน้ำได้ดีเยี่ยม รีดน้ำง่ายไม่ต้องใช้มือบิด" 
+        description: "มีระบบกรองฝุ่น 3 ชั้น (3 Stage Filtration System) ช่วยลดการฟุ้งกระจายของฝุ่น ความจุถังเก็บฝุ่น 0.4 ลิตร ถอดล้างได้ง่าย ตัวเครื่องขนาดกะทัดรัด (34.20 x 7.85 x 34.20 ซม.) เข้าถึงพื้นที่แคบได้ดี" 
     },
     { 
         id: 2, 
-        name: "หุ่นยนต์ดูดฝุ่นอัจฉริยะ V2", 
-        price: 2900, 
-        category: "อิเล็กทรอนิกส์", 
+        name: "ถังขยะกลมเหล็กพ่น 10 ลิตร KASSA HOME รุ่น PDQ 978618-002 สีดำ", 
+        price: 298,
+        category: "อุปกรณ์ในบ้าน", 
         images: [
-            "https://images.unsplash.com/photo-1589127077225-45ff7be4241c?w=600",
-            "https://images.unsplash.com/photo-1518133910546-b6c2fb7d79e3?w=600",
-            "https://images.unsplash.com/photo-1558317374-067fb5f30001?w=600"
+            "finalPJimg/3-1.webp",
+            "finalPJimg/3-2.webp",
+            "finalPJimg/3-3.webp"
         ],
-        description: "ทำงานอัตโนมัติด้วยระบบเซ็นเซอร์ เข้าถึงทุกซอกมุม แม้ใต้โซฟา" 
+        description: "ถังขยะกลม ดีไซน์สวยคลาสสิก เหมาะสำหรับใส่ขยะทั่วไป จะวางใช้งานในห้องนอน ห้องน้ำ ห้องครัว หรือห้องนั่งเล่นก็ลงตัว ขนาดกะทัดรัด ไม่เกะกะทางเดิน ผลิตจากเหล็กพ่นสีเกรดคุณภาพ เนื้อหนา แข็งแรง ทนทาน" 
     },
     { 
         id: 3, 
+        name: "ถังขยะเซนเซอร์ 13 ลิตร พร้อมขาตั้งสเตนเลส Danin KASSA HOME รุ่น JAH9710 สีเงิน", 
+        price: 1180, 
+        category: "อุปกรณ์ในบ้าน", 
+        images: [
+            "finalPJimg/4-1.webp",
+            "finalPJimg/4-2.webp",
+            "finalPJimg/4-3.webp"
+        ],
+        description: "หลีกเลี่ยงการสัมผัสกับฝาถังขยะโดยตรง ด้วยถังขยะทรงเหลี่ยมพร้อมขาตั้ง และฟังก์ชันเซนเซอร์อัตโนมัติจาก KASSA HOME ผลิตจากสเตนเลสสตีล เกรด 430 และพลาสติก PP/ABS คุณภาพดี แข็งแรง ทนทานต่อการกัดกร่อน ใช้งานง่าย เพียงใช้มือหรือเท้าสัมผัสปากถัง ออกแบบมาเพื่อช่วยลดการสัมผัสกับสิ่งสกปรกหรือเชื้อโรค เพื่อสุขอนามัยที่ดีของคุณ" 
+    },
+    { 
+        id: 4, 
+        name: "ถังแยกเศษอาหารพร้อมตะแกรงกรอง 12 ล. KEYWAY รุ่น D-12 สีเทา", 
+        price: 178, 
+        category: "อุปกรณ์ในบ้าน", 
+        images: [
+            "finalPJimg/5-1.webp",
+            "finalPJimg/5-2.webp",
+            "finalPJimg/5-3.webp"
+        ],
+        description: "ถังกรองรักโลก ใช้แยกเศษอาหารและน้ำออกจากกันเพื่อนำไปจัดการได้ง่ายขึ้น ถังผลิตจากพลาสติกคุณภาพดี ทนทาน มีตะแกรงกรองพร้อมฝาปิดป้องกันกลิ่นหรือสัตว์ขุ้ยเขี่ย สะดวกในการล้าง ไม่เลอะมือ เพื่อการจัดการเศษอาหารที่ดีและสะดวกขึ้น" 
+    },
+    { 
+        id: 5, 
+        name: "OTOP ไม้กวาดบ้านศรนารายณ์ สีขาว - น้ำตาล", 
+        price: 168, 
+        category: "ทำความสะอาด", 
+        images: [
+            "finalPJimg/6-1.webp",
+            "finalPJimg/6-2.webp",
+            "finalPJimg/6-3.webp"
+        ],
+        description: "ผลิตจากวัสดุเกรดคุณภาพ ใช้งานทนทาน กวาดพื้นได้อย่างสะดวก เศษผงฝุ่นและสิ่งสกปรกไม่มีเหลือบนพื้น" 
+    },
+    { 
+        id: 6, 
+        name: "ที่โกยขยะพลาสติก KASSA HOME ขนาด 30 x 30 x 75 ซม. สีฟ้า", 
+        price: 48, 
+        category: "ทำความสะอาด", 
+        images: [
+            "finalPJimg/7-1.webp",
+            "finalPJimg/7-2.webp",
+            "finalPJimg/7-3.webp"
+        ],
+        description: "ที่โกยขยะหน้ากว้างพิเศษ ผลิตจากพลาสติก PP เกรดคุณภาพ ดีไซน์ด้ามจับขนาดใหญ่ สะดวกในการใช้งานยิ่งขึ้น สามารถเก็บฝุ่นละอองได้ดี ไม่ทำให้ฝุ่นฟุ้งกระจาย เศษผงและฝุ่นไม่ติดที่โกยผง ใช้งานได้ทั้งภายในและภายนอกอาคาร แข็งแรง ทนทาน ใช้งานได้นาน" 
+    },
+    { 
+        id: 7, 
         name: "น้ำยาอเนกประสงค์สูตรเข้มข้น", 
         price: 120, 
         category: "เครื่องครัว", 
@@ -37,15 +85,112 @@ const allProducts = [
         description: "ขจัดคราบมันและคราบสกปรกได้หมดจด กลิ่นหอมสดชื่น" 
     },
     { 
-        id: 4, 
-        name: "ถังขยะอัจฉริยะระบบเซ็นเซอร์", 
-        price: 890, 
-        category: "ของใช้ในบ้าน",
+        id: 8, 
+        name: "น้ำยาอเนกประสงค์สูตรเข้มข้น", 
+        price: 120, 
+        category: "เครื่องครัว", 
         images: [
-            "https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?w=600",
-            "https://images.unsplash.com/photo-1614013444458-30549c40fd3d?w=600"
+            "https://images.unsplash.com/photo-1558523038-0812256f5055?w=600",
+            "https://images.unsplash.com/photo-1583947215259-38e31be8751f?w=600",
+            "https://images.unsplash.com/photo-1618219944342-824e40a13285?w=600"
         ],
-        description: "เปิด-ปิดฝาอัตโนมัติด้วยระบบเซ็นเซอร์ สะดวก สะอาด ไร้สัมผัส" 
+        description: "ขจัดคราบมันและคราบสกปรกได้หมดจด กลิ่นหอมสดชื่น" 
+    },
+    { 
+        id: 9, 
+        name: "น้ำยาอเนกประสงค์สูตรเข้มข้น", 
+        price: 120, 
+        category: "เครื่องครัว", 
+        images: [
+            "https://images.unsplash.com/photo-1558523038-0812256f5055?w=600",
+            "https://images.unsplash.com/photo-1583947215259-38e31be8751f?w=600",
+            "https://images.unsplash.com/photo-1618219944342-824e40a13285?w=600"
+        ],
+        description: "ขจัดคราบมันและคราบสกปรกได้หมดจด กลิ่นหอมสดชื่น" 
+    },
+    { 
+        id: 10, 
+        name: "น้ำยาอเนกประสงค์สูตรเข้มข้น", 
+        price: 120, 
+        category: "เครื่องครัว", 
+        images: [
+            "https://images.unsplash.com/photo-1558523038-0812256f5055?w=600",
+            "https://images.unsplash.com/photo-1583947215259-38e31be8751f?w=600",
+            "https://images.unsplash.com/photo-1618219944342-824e40a13285?w=600"
+        ],
+        description: "ขจัดคราบมันและคราบสกปรกได้หมดจด กลิ่นหอมสดชื่น" 
+    },
+    { 
+        id: 11, 
+        name: "น้ำยาอเนกประสงค์สูตรเข้มข้น", 
+        price: 120, 
+        category: "เครื่องครัว", 
+        images: [
+            "https://images.unsplash.com/photo-1558523038-0812256f5055?w=600",
+            "https://images.unsplash.com/photo-1583947215259-38e31be8751f?w=600",
+            "https://images.unsplash.com/photo-1618219944342-824e40a13285?w=600"
+        ],
+        description: "ขจัดคราบมันและคราบสกปรกได้หมดจด กลิ่นหอมสดชื่น" 
+    },
+    { 
+        id: 12, 
+        name: "น้ำยาอเนกประสงค์สูตรเข้มข้น", 
+        price: 120, 
+        category: "เครื่องครัว", 
+        images: [
+            "https://images.unsplash.com/photo-1558523038-0812256f5055?w=600",
+            "https://images.unsplash.com/photo-1583947215259-38e31be8751f?w=600",
+            "https://images.unsplash.com/photo-1618219944342-824e40a13285?w=600"
+        ],
+        description: "ขจัดคราบมันและคราบสกปรกได้หมดจด กลิ่นหอมสดชื่น" 
+    },
+    { 
+        id: 13, 
+        name: "น้ำยาอเนกประสงค์สูตรเข้มข้น", 
+        price: 120, 
+        category: "เครื่องครัว", 
+        images: [
+            "https://images.unsplash.com/photo-1558523038-0812256f5055?w=600",
+            "https://images.unsplash.com/photo-1583947215259-38e31be8751f?w=600",
+            "https://images.unsplash.com/photo-1618219944342-824e40a13285?w=600"
+        ],
+        description: "ขจัดคราบมันและคราบสกปรกได้หมดจด กลิ่นหอมสดชื่น" 
+    },
+    { 
+        id: 14, 
+        name: "น้ำยาอเนกประสงค์สูตรเข้มข้น", 
+        price: 120, 
+        category: "เครื่องครัว", 
+        images: [
+            "https://images.unsplash.com/photo-1558523038-0812256f5055?w=600",
+            "https://images.unsplash.com/photo-1583947215259-38e31be8751f?w=600",
+            "https://images.unsplash.com/photo-1618219944342-824e40a13285?w=600"
+        ],
+        description: "ขจัดคราบมันและคราบสกปรกได้หมดจด กลิ่นหอมสดชื่น" 
+    },
+    { 
+        id: 15, 
+        name: "น้ำยาอเนกประสงค์สูตรเข้มข้น", 
+        price: 120, 
+        category: "เครื่องครัว", 
+        images: [
+            "https://images.unsplash.com/photo-1558523038-0812256f5055?w=600",
+            "https://images.unsplash.com/photo-1583947215259-38e31be8751f?w=600",
+            "https://images.unsplash.com/photo-1618219944342-824e40a13285?w=600"
+        ],
+        description: "ขจัดคราบมันและคราบสกปรกได้หมดจด กลิ่นหอมสดชื่น" 
+    },
+    { 
+        id: 16, 
+        name: "น้ำยาอเนกประสงค์สูตรเข้มข้น", 
+        price: 120, 
+        category: "เครื่องครัว", 
+        images: [
+            "https://images.unsplash.com/photo-1558523038-0812256f5055?w=600",
+            "https://images.unsplash.com/photo-1583947215259-38e31be8751f?w=600",
+            "https://images.unsplash.com/photo-1618219944342-824e40a13285?w=600"
+        ],
+        description: "ขจัดคราบมันและคราบสกปรกได้หมดจด กลิ่นหอมสดชื่น" 
     }
 ];
 
@@ -72,8 +217,8 @@ function renderItems(data, containerId, isHot = false) {
         <div class="col-6 col-md-4 col-lg-3 d-flex align-items-stretch mb-4">
             <div class="card product-card shadow-sm p-3 text-center w-100 border-0" onclick="showProductDetail(${item.id})" style="cursor: pointer; position: relative;">
                 ${isHot ? '<span class="best-seller-badge" style="position:absolute; top:10px; right:10px; background:red; color:white; padding:2px 8px; border-radius:10px; font-size:10px; z-index:2;"><i class="fas fa-crown"></i> HOT</span>' : ''}
-                <div class="img-wrapper mb-3" style="height:160px; overflow:hidden;">
-                    <img src="${item.images[0]}" class="card-img-top h-100 w-100" style="object-fit: cover; border-radius: 12px;">
+                <div class="img-wrapper mb-3" style="aspect-ratio: 1/1; height: auto; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #f8f9fa; border-radius: 12px;">
+                    <img src="${item.images[0]}" class="card-img-top" style="object-fit: contain; width: 100%; height: 100%; padding: 10px;">
                 </div>
                 <h6 class="fw-bold mb-1 text-dark text-truncate px-2">${item.name}</h6>
                 <p class="text-primary fw-bold mb-0">฿${item.price.toLocaleString()}</p>
@@ -359,19 +504,50 @@ function resetSearch() {
     renderItems(allProducts, 'all-products-container');
 }
 
-// ผูกเหตุการณ์การพิมพ์ (Event Listeners)
-document.addEventListener('DOMContentLoaded', () => {
-    const searchInput = document.getElementById('searchInput');
+// --- ฟังก์ชันสำหรับ สลับการแสดงผล (ดูเพิ่มเติม / ยุบสินค้า) ---
+function toggleProducts() {
+    const btn = document.getElementById('view-more-btn');
+    const container = document.getElementById('all-products-container');
     
-    if (searchInput) {
-        // ค้นหาแบบ Real-time: พิมพ์ปุ๊บ ผลลัพธ์เปลี่ยนปั๊บ
-        searchInput.addEventListener('input', searchProducts);
+    // ตรวจสอบว่าปัจจุบันแสดงกี่ชิ้น (ถ้าแสดง 4 ชิ้น คือสถานะปกติ)
+    const isExpanded = container.children.length > 4;
 
-        // ค้นหาเมื่อกด Enter
+    if (isExpanded) {
+        // --- กรณีต้องการ "ยุบสินค้า" ---
+        const initialProducts = allProducts.slice(0, 4);
+        renderItems(initialProducts, 'all-products-container');
+        
+        // เปลี่ยนข้อความปุ่มและไอคอน
+        btn.innerHTML = 'ดูสินค้าเพิ่มเติม <i class="fa-solid fa-chevron-down ms-2"></i>';
+        
+        // เลื่อนหน้าจอกลับขึ้นไปที่หัวข้อสินค้าเพื่อความสะดวก
+        document.getElementById('product-recommend-section').scrollIntoView({ behavior: 'smooth' });
+    } else {
+        // --- กรณีต้องการ "ดูเพิ่มเติม" ---
+        renderItems(allProducts, 'all-products-container');
+        
+        // เปลี่ยนข้อความปุ่มเป็นย้อนกลับ/ยุบ
+        btn.innerHTML = 'ย้อนกลับ (ยุบสินค้า) <i class="fa-solid fa-chevron-up ms-2"></i>';
+    }
+}
+
+// --- รวม Event Listeners ทั้งหมดไว้ที่เดียว ---
+document.addEventListener('DOMContentLoaded', () => {
+    // 1. เรนเดอร์สินค้าเริ่มต้น (โชว์แค่ 4 ชิ้นแรก หรือ 1 แถว)
+    const topFourBestSellers = bestSellers.slice(0, 4); 
+    renderItems(topFourBestSellers, 'best-seller-container', true);
+    const initialProducts = allProducts.slice(0, 4);
+    renderItems(initialProducts, 'all-products-container');
+    renderPromotions();
+    updateCartCount();
+
+    // 2. ระบบค้นหา (Search System)
+    const searchInput = document.getElementById('searchInput');
+    if (searchInput) {
+        searchInput.addEventListener('input', searchProducts);
         searchInput.addEventListener('keypress', (e) => {
             if (e.key === 'Enter') {
                 searchProducts();
-                // เลื่อนหน้าจอลงมาดูผลลัพธ์
                 document.getElementById('product-recommend-section').scrollIntoView({ behavior: 'smooth' });
             }
         });
