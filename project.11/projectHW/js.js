@@ -4,7 +4,7 @@ const allProducts = [
         id: 1, 
         name: "หุ่นยนต์ดูดฝุ่น รุ่น RV-X15N (สีขาว)", 
         price: 6990, 
-        category: "เครื่องครัว", 
+        category: "เครื่องใช้ไฟฟ้า", 
         images: [
             "finalPJimg/1-1.webp",
             "finalPJimg/1-2.webp",
@@ -16,7 +16,7 @@ const allProducts = [
         id: 2, 
         name: "ถังขยะกลมเหล็กพ่น 10 ลิตร KASSA HOME รุ่น PDQ 978618-002 สีดำ", 
         price: 298,
-        category: "อุปกรณ์ในบ้าน", 
+        category: "อุปกรณ์ภายในบ้าน", 
         images: [
             "finalPJimg/3-1.webp",
             "finalPJimg/3-2.webp",
@@ -28,7 +28,7 @@ const allProducts = [
         id: 3, 
         name: "ถังขยะเซนเซอร์ 13 ลิตร พร้อมขาตั้งสเตนเลส Danin KASSA HOME รุ่น JAH9710 สีเงิน", 
         price: 1180, 
-        category: "อุปกรณ์ในบ้าน", 
+        category: "อุปกรณ์ภายในบ้าน", 
         images: [
             "finalPJimg/4-1.webp",
             "finalPJimg/4-2.webp",
@@ -40,7 +40,7 @@ const allProducts = [
         id: 4, 
         name: "ถังแยกเศษอาหารพร้อมตะแกรงกรอง 12 ล. KEYWAY รุ่น D-12 สีเทา", 
         price: 178, 
-        category: "อุปกรณ์ในบ้าน", 
+        category: "อุปกรณ์ภายในบ้าน", 
         images: [
             "finalPJimg/5-1.webp",
             "finalPJimg/5-2.webp",
@@ -52,7 +52,7 @@ const allProducts = [
         id: 5, 
         name: "OTOP ไม้กวาดบ้านศรนารายณ์ สีขาว - น้ำตาล", 
         price: 168, 
-        category: "ทำความสะอาด", 
+        category: "อุปกรณ์ทำความสะอาด", 
         images: [
             "finalPJimg/6-1.webp",
             "finalPJimg/6-2.webp",
@@ -64,7 +64,7 @@ const allProducts = [
         id: 6, 
         name: "ที่โกยขยะพลาสติก KASSA HOME ขนาด 30 x 30 x 75 ซม. สีฟ้า", 
         price: 48, 
-        category: "ทำความสะอาด", 
+        category: "อุปกรณ์ทำความสะอาด", 
         images: [
             "finalPJimg/7-1.webp",
             "finalPJimg/7-2.webp",
@@ -74,127 +74,224 @@ const allProducts = [
     },
     { 
         id: 7, 
-        name: "น้ำยาอเนกประสงค์สูตรเข้มข้น", 
-        price: 120, 
-        category: "เครื่องครัว", 
+        name: "ชุดไม้กวาดด้ามสั้นพร้อมที่โกยผง KLEANER รุ่น C130013B สีน้ำเงิน", 
+        price: 38, 
+        category: "อุปกรณ์ทำความสะอาด", 
         images: [
-            "https://images.unsplash.com/photo-1558523038-0812256f5055?w=600",
-            "https://images.unsplash.com/photo-1583947215259-38e31be8751f?w=600",
-            "https://images.unsplash.com/photo-1618219944342-824e40a13285?w=600"
+            "finalPJimg/8-1.webp",
+            "finalPJimg/8-2.webp",
+            "finalPJimg/8-3.webp"
         ],
-        description: "ขจัดคราบมันและคราบสกปรกได้หมดจด กลิ่นหอมสดชื่น" 
+        description: "ชุดไม้กวาดด้ามสั้นพร้อมที่โกยผงคุณภาพจาก KLEANER รุ่น C130013B มาพร้อมขนแปรง PET คุณภาพดีที่ละเอียดและแนบสนิทกับพื้น ช่วยให้คุณกวาดได้สะอาดหมดจดทุกซอกมุม ไม่ว่าจะบนโต๊ะอาหารหรือตามชั้นเฟอร์นิเจอร์ก็ใช้งานได้สบาย มาพร้อมหูคล้องจัดเก็บง่าย ประหยัดพื้นที่ " 
     },
     { 
         id: 8, 
-        name: "น้ำยาอเนกประสงค์สูตรเข้มข้น", 
-        price: 120, 
-        category: "เครื่องครัว", 
+        name: "ถุงขยะแบบม้วนก้นกลมเชือกผูก เกรด A KASSA HOME รุ่น 5708 ขนาด 24 x 28 นิ้ว (แพ็ก 25 ชิ้น) สีดำ", 
+        price: 43, 
+        category: "อุปกรณ์ภายในบ้าน", 
         images: [
-            "https://images.unsplash.com/photo-1558523038-0812256f5055?w=600",
-            "https://images.unsplash.com/photo-1583947215259-38e31be8751f?w=600",
-            "https://images.unsplash.com/photo-1618219944342-824e40a13285?w=600"
+            "finalPJimg/9-1.webp",
+            "finalPJimg/9-2.webp",
+            "finalPJimg/9-3.webp"
         ],
-        description: "ขจัดคราบมันและคราบสกปรกได้หมดจด กลิ่นหอมสดชื่น" 
+        description: "จัดเก็บเศษขยะและสิ่งปฏิกูลภายในบ้านได้ด้วยถุงขยะจาก KASSA HOME สะดวก รวดเร็ว ใช้งานง่าย เพียงดึงถุงออกจากแพ็กก็พร้อมใช้งานทันที เนื้อเหนียวหนาแน่น ผลิตจากวัสดุที่สามารถนำกลับมารีไซเคิลได้ ใส่ขยะได้อย่างจุใจ และรั่วซึมได้ยาก ให้คุณมั่นใจได้ในทุกการใช้งาน" 
     },
     { 
         id: 9, 
-        name: "น้ำยาอเนกประสงค์สูตรเข้มข้น", 
-        price: 120, 
-        category: "เครื่องครัว", 
+        name: "ชุดถังปั่น ไลท์เวทสปิน FARCENT รุ่น WW-6101 สีเขียวพาสเทล", 
+        price: 529, 
+        category: "อุปกรณ์ทำความสะอาด", 
         images: [
-            "https://images.unsplash.com/photo-1558523038-0812256f5055?w=600",
-            "https://images.unsplash.com/photo-1583947215259-38e31be8751f?w=600",
-            "https://images.unsplash.com/photo-1618219944342-824e40a13285?w=600"
+            "finalPJimg/11-1.webp",
+            "finalPJimg/11-2.webp",
+            "finalPJimg/11-3.webp"
         ],
-        description: "ขจัดคราบมันและคราบสกปรกได้หมดจด กลิ่นหอมสดชื่น" 
+        description: "ทำความสะอาดพื้นได้ง่ายและไม่ต้องใช้มือบิดผ้าถูพื้นอีกต่อไปด้วยชุดถังปั่นไลท์เวทสปิน เพียงปั่นผ้าม็อบ ผ้าก็หมาดน้ำพร้อมถูพื้น น้ำหนักเบา เคลื่อนย้ายง่าย สีสวยน่าใช้งาน" 
     },
     { 
         id: 10, 
-        name: "น้ำยาอเนกประสงค์สูตรเข้มข้น", 
-        price: 120, 
-        category: "เครื่องครัว", 
+        name: "ไม้ม็อบถูพื้นแบบฟองน้ำ PVA ด้ามจับอะลูมิเนียม KLEANER รุ่น GSA005 สีน้ำเงิน", 
+        price: 198, 
+        category: "อุปกรณ์ทำความสะอาด", 
         images: [
-            "https://images.unsplash.com/photo-1558523038-0812256f5055?w=600",
-            "https://images.unsplash.com/photo-1583947215259-38e31be8751f?w=600",
-            "https://images.unsplash.com/photo-1618219944342-824e40a13285?w=600"
+            "finalPJimg/14-1.webp",
+            "finalPJimg/14-2.webp",
+            "finalPJimg/14-3.webp"
         ],
-        description: "ขจัดคราบมันและคราบสกปรกได้หมดจด กลิ่นหอมสดชื่น" 
+        description: "ไม้ม็อบจาก KLEANER รุ่น GSA005 มาพร้อมด้ามจับถนัดมือ ออกแบบให้คุณสามารถปรับความยาวได้ตามการใช้งาน หัวม็อบฟองน้ำ PVA เก็บฝุ่นและดูดซับน้ำได้ดีเยี่ยม ถอดซักทำความสะอาดง่าย พร้อมให้คุณทำความสะอาดบ้านได้อย่างง่ายดาย และมีประสิทธิภาพกว่าที่เคย" 
     },
     { 
         id: 11, 
-        name: "น้ำยาอเนกประสงค์สูตรเข้มข้น", 
-        price: 120, 
-        category: "เครื่องครัว", 
+        name: "ยางรีดน้ำกระจกชนิดยางคู่ BE MAN รุ่น A0120001 สีขาว - เทา", 
+        price: 108, 
+        category: "อุปกรณ์ทำความสะอาด", 
         images: [
-            "https://images.unsplash.com/photo-1558523038-0812256f5055?w=600",
-            "https://images.unsplash.com/photo-1583947215259-38e31be8751f?w=600",
-            "https://images.unsplash.com/photo-1618219944342-824e40a13285?w=600"
+            "finalPJimg/15-1.webp",
+            "finalPJimg/15-2.webp",
+            "finalPJimg/15-3.webp"
         ],
-        description: "ขจัดคราบมันและคราบสกปรกได้หมดจด กลิ่นหอมสดชื่น" 
+        description: "อุปกรณ์เช็ดทำความสะอาดกระจก ไม่ว่าจะเป็นกระจกรถยนต์ กระจกหน้าต่าง หรือกระจกประตูบ้าน ช่วยรีดน้ำ คราบแมลง หรือ ฝุ่นละอองต่างๆ ให้กระจกใสสะอาดได้อย่างหมดจด ช่วยประหยัดเวลา ไม่เปลืองแรง เพิ่มความสะดวกสบายในการทำความสะอาด" 
     },
     { 
         id: 12, 
-        name: "น้ำยาอเนกประสงค์สูตรเข้มข้น", 
-        price: 120, 
-        category: "เครื่องครัว", 
+        name: "น้ำยาเช็ดกระจก WAXY ขนาด 580 มล. สีฟ้า", 
+        price: 58, 
+        category: "ผลิตภัณฑ์ทำความสะอาด", 
         images: [
-            "https://images.unsplash.com/photo-1558523038-0812256f5055?w=600",
-            "https://images.unsplash.com/photo-1583947215259-38e31be8751f?w=600",
-            "https://images.unsplash.com/photo-1618219944342-824e40a13285?w=600"
+            "finalPJimg/17-1.webp",
+            "finalPJimg/17-2.webp",
+            "finalPJimg/17-3.webp"
         ],
-        description: "ขจัดคราบมันและคราบสกปรกได้หมดจด กลิ่นหอมสดชื่น" 
+        description: "น้ำยาสูตรเข้มข้นขจัดคราบสกปรกบนผิวกระจกทุกชนิด รวมทั้งเคาน์เตอร์ โต๊ะ พื้นผิววัสดุต่างๆ ได้ง่าย กลิ่นหอม ไม่ทิ้งคราบและไม่หยดเลอะเทอะเวลาใช้งาน" 
     },
     { 
         id: 13, 
-        name: "น้ำยาอเนกประสงค์สูตรเข้มข้น", 
-        price: 120, 
-        category: "เครื่องครัว", 
+        name: "น้ำยาถูพื้น แกลลอน MR.MUSCLE กลิ่นลาเวนเดอร์ ขนาด 5000 มล. สีม่วง", 
+        price: 238, 
+        category: "ผลิตภัณฑ์ทำความสะอาด", 
         images: [
-            "https://images.unsplash.com/photo-1558523038-0812256f5055?w=600",
-            "https://images.unsplash.com/photo-1583947215259-38e31be8751f?w=600",
-            "https://images.unsplash.com/photo-1618219944342-824e40a13285?w=600"
+            "finalPJimg/19-1.webp",
+            "finalPJimg/19-2.webp",
+            "finalPJimg/19-3.webp"
         ],
-        description: "ขจัดคราบมันและคราบสกปรกได้หมดจด กลิ่นหอมสดชื่น" 
+        description: "น้ำยาทำความสะอาดพื้น Mr.Muscle ช่วยขจัดคราบสกปรก กลิ่นไม่พึงประสงค์ และฆ่าเชื้อแบคทีเรีย พร้อมให้กลิ่นหอม สะอาด สดชื่น สามารถทำความสะอาดพื้นได้หลายรูปแบบในขวดเดียว" 
     },
     { 
         id: 14, 
-        name: "น้ำยาอเนกประสงค์สูตรเข้มข้น", 
-        price: 120, 
-        category: "เครื่องครัว", 
+        name: "ฟองน้ำใยขัดเนื้อละเอียด KASSA HOME รุ่น Nito (แพ็ก 3 ชิ้น) สีขาว - เทา", 
+        price: 38, 
+        category: "อุปกรณ์ทำความสะอาด", 
         images: [
-            "https://images.unsplash.com/photo-1558523038-0812256f5055?w=600",
-            "https://images.unsplash.com/photo-1583947215259-38e31be8751f?w=600",
-            "https://images.unsplash.com/photo-1618219944342-824e40a13285?w=600"
+            "finalPJimg/20-1.webp",
+            "finalPJimg/20-2.webp",
+            "finalPJimg/20-3.webp"
         ],
-        description: "ขจัดคราบมันและคราบสกปรกได้หมดจด กลิ่นหอมสดชื่น" 
+        description: "ให้เรื่องการทำความสะอาดภาชนะเครื่องครัว จาน ชาม หรือแก้วกาแฟใบโปรดของคุณเป็นเรื่องง่ายดายยิ่งขึ้นด้วยฟองน้ำใยขัดเนื้อละเอียดจากแบรนด์ KASSA HOME รุ่น Nito สามารถใช้งานได้ทั้งด้านที่เป็นใยขัดและด้านที่เป็นฟองน้ำ ช่วยขจัดคราบอาหารได้อย่างสะอาดหมดจดโดยไม่ทิ้งรอยขีดข่วนที่ผิววัสดุ ให้คุณจัดการจานกองโตได้อย่างรวดเร็วมากยิ่งขึ้น" 
     },
     { 
         id: 15, 
-        name: "น้ำยาอเนกประสงค์สูตรเข้มข้น", 
-        price: 120, 
-        category: "เครื่องครัว", 
+        name: "ฟองน้ำล้างจานทรงรี KLEANER รุ่น GSF005 สีเทา", 
+        price: 28, 
+        category: "อุปกรณ์ทำความสะอาด", 
         images: [
-            "https://images.unsplash.com/photo-1558523038-0812256f5055?w=600",
-            "https://images.unsplash.com/photo-1583947215259-38e31be8751f?w=600",
-            "https://images.unsplash.com/photo-1618219944342-824e40a13285?w=600"
+            "finalPJimg/21-1.webp",
+            "finalPJimg/21-2.webp",
+            "finalPJimg/21-3.webp"
         ],
-        description: "ขจัดคราบมันและคราบสกปรกได้หมดจด กลิ่นหอมสดชื่น" 
+        description: "รอยเปื้อน คราบน้ำมัน คราบสกปรกบนจานใบโปรดและสารพัดเครื่องครัว จัดการได้ง่าย ๆ ด้วยฟองน้ำล้างจาน KLEANER ด้วยการออกแบบให้คุณใช้งานได้ 2 ด้าน ตอบโจทย์การทำความสะอาดดีเยี่ยม ด้านใยขัดทนทาน ขัดถูคราบสกปรกได้เกลี้ยงเกลา ด้านที่เป็นผ้าไมโครไฟเบอร์ผิวนุ่ม ไม่ทิ้งริ้วรอย เหมาะกับภาชนะที่ต้องการการดูแลเป็นพิเศษ ทั้งยังดีไซน์ให้ใช้งานง่าย จับถนัดมือ จะบิด บีบ หรือพับก็ยังคงรูปทรงได้ดี ล้างทำความสะอาดง่าย พร้อมใช้งานอยู่เสมอ" 
     },
     { 
         id: 16, 
-        name: "น้ำยาอเนกประสงค์สูตรเข้มข้น", 
-        price: 120, 
-        category: "เครื่องครัว", 
+        name: "เครื่องดูดฝุ่น-ดูดน้ำ KARCHER รุ่น NT 30/1 Me Classic CN ขนาด 30 ลิตร สีเทา", 
+        price: 7080, 
+        category: "เครื่องใช้ไฟฟ้า", 
         images: [
-            "https://images.unsplash.com/photo-1558523038-0812256f5055?w=600",
-            "https://images.unsplash.com/photo-1583947215259-38e31be8751f?w=600",
-            "https://images.unsplash.com/photo-1618219944342-824e40a13285?w=600"
+            "finalPJimg/23-1.webp",
+            "finalPJimg/23-2.webp",
+            "finalPJimg/23-3.webp"
         ],
-        description: "ขจัดคราบมันและคราบสกปรกได้หมดจด กลิ่นหอมสดชื่น" 
-    }
+        description: "เครื่องดูดฝุ่น-ดูดน้ำที่ใช้งานง่ายและแข็งแรงทนทาน กำลังแรง 1,500 วัตต์ มีถังขนาดความจุ 30 ลิตร และสามารถขจัดเศษสิ่งสกปรกได้ทุกชนิด มีระบบ Easy Service Concept ช่วยให้ค่าใช้จ่ายในการใช้งานและการบำรุงรักษาต่ำ" 
+    },
+    { 
+        id: 17, 
+        name: "หุ่นยนต์ดูดฝุ่นอัจฉริยะ XIAOM รุ่น 2 Pro Mi XMI-BHR5055EU สีขาว", 
+        price: 10999, 
+        category: "เครื่องใช้ไฟฟ้า", 
+        images: [
+            "finalPJimg/24-1.webp",
+            "finalPJimg/24-2.webp",
+            "finalPJimg/24-3.webp"
+        ],
+        description: "หุ่นยนต์ดูดฝุ่นอัจฉริยะ XIAOMI 2 Pro ล้ำสมัยทุกฟังก์ชันการใช้งาน ตอบโจทย์งานบ้านที่สมบูรณ์แบบ กับเทคโนโลยีระบบนำทางเลเซอร์ LDS สามารถสร้างแผนผังได้หลายชั้น แบตเตอรี่ 5,200 mAh ทำความสะอาดพื้นที่มากกว่า 150 ตร.ม. ใช้งานง่าย สั่งงานง่ายผ่านแอปพลิเคชัน" 
+    },
+    { 
+        id: 18, 
+        name: "น้ำยาถูพื้น แกลลอน KINGS STELLA รุ่น กลิ่นบับเบิ้ลกัม ขนาด 5,200 มล. สีชมพู", 
+        price: 198, 
+        category: "ผลิตภัณฑ์ทำความสะอาด", 
+        images: [
+            "finalPJimg/18-1.webp",
+            "finalPJimg/18-2.webp",
+            "finalPJimg/18-3.webp"
+        ],
+        description: "ขจัดคราบสกปรก คราบมัน คราบฝังแน่น คราบปัสสาวะอุจจาระสัตว์เลี้ยง รวมถึงขจัดกลิ่นไม่พึงประสงค์ได้อย่างมีประสิทธิภาพ เหมาะสำหรับพื้นผิวหลายชนิด กลิ่นหอมสดชื่น ให้พื้นบ้านคุณสะอาดและมีหอมไปพร้อมๆ กัน" 
+    },
+    { 
+        id: 19, 
+        name: "ชุดถังปั่นดูโอวอช 10 ลิตร ชุดไม้ถูพื้นพร้อมผ้าไมโครไฟเบอร์ 1 ชิ้น SCOTCH BRITE รุ่น T5 สีเขียว", 
+        price: 1390, 
+        category: "อุปกรณ์ทำความสะอาด", 
+        images: [
+            "finalPJimg/12-1.webp",
+            "finalPJimg/12-2.webp",
+            "finalPJimg/12-3.webp"
+        ],
+        description: "อุปกรณ์ทำความสะอาดบ้านยุคใหม่ที่มีฟังก์ชั่นตอบโจทย์การใช้งานเบาแรง ทั้งการซัก และปั่นแห้ง ผ้าม็อบผลิตจากไมโครไฟเบอร์ชนิดพิเศษ สามารถดักจับฝุ่น และสิ่งสกปรกได้อย่างมีประสิทธิภาพ ซักและปั่นแห้ง ได้ในถังเดียว" 
+    },
+    { 
+        id: 20, 
+        name: "ถุงขยะก้นกลมมีเชือกรัดปากถุง แบบม้วน เกรดรีไซเคิล KASSA HOME ขนาด 30 x 40 นิ้ว (แพ็ก 30 ใบ) สีดำ", 
+        price: 88, 
+        category: "อุปกรณ์ภายในบ้าน", 
+        images: [
+            "finalPJimg/10-1.webp",
+            "finalPJimg/10-2.webp",
+            "finalPJimg/10-3.webp"
+        ],
+        description: "แยกขยะได้ง่าย ๆ สะอาด และรักษ์โลก ด้วยถุงขยะก้นกลม แบบม้วน KASSA HOME ผลิตจากพลาสติก เกรดรีไซเคิล กลิ่นไม่เหม็น ไม่ฉีกหรือขาดง่าย รองรับน้ำหนักได้ดี มาพร้อมเชือกรัดปากถุง ป้องกันกลิ่นเหม็นลอยคลุ้ง และป้องกันสัตว์คุ้ยเขี่ยขยะ สะดวกสบายต่อเจ้าหน้าที่เข้ามาเก็บขยะ" 
+    },
 ];
 
-const bestSellers = allProducts; // ใช้ตัวอย่างเดียวกันเพื่อโชว์แถวละ 4
+const bestSellers = [
+    { 
+        id: 15, 
+        name: "ฟองน้ำล้างจานทรงรี KLEANER รุ่น GSF005 สีเทา", 
+        price: 28, 
+        category: "อุปกรณ์ทำความสะอาด", 
+        images: [
+            "finalPJimg/21-1.webp",
+            "finalPJimg/21-2.webp",
+            "finalPJimg/21-3.webp"
+        ],
+        description: "รอยเปื้อน คราบน้ำมัน คราบสกปรกบนจานใบโปรดและสารพัดเครื่องครัว จัดการได้ง่าย ๆ ด้วยฟองน้ำล้างจาน KLEANER ด้วยการออกแบบให้คุณใช้งานได้ 2 ด้าน ตอบโจทย์การทำความสะอาดดีเยี่ยม ด้านใยขัดทนทาน ขัดถูคราบสกปรกได้เกลี้ยงเกลา ด้านที่เป็นผ้าไมโครไฟเบอร์ผิวนุ่ม ไม่ทิ้งริ้วรอย เหมาะกับภาชนะที่ต้องการการดูแลเป็นพิเศษ ทั้งยังดีไซน์ให้ใช้งานง่าย จับถนัดมือ จะบิด บีบ หรือพับก็ยังคงรูปทรงได้ดี ล้างทำความสะอาดง่าย พร้อมใช้งานอยู่เสมอ" 
+    },
+    { 
+        id: 1, 
+        name: "หุ่นยนต์ดูดฝุ่น รุ่น RV-X15N (สีขาว)", 
+        price: 6990, 
+        category: "เครื่องใช้ไฟฟ้า", 
+        images: [
+            "finalPJimg/1-1.webp",
+            "finalPJimg/1-2.webp",
+            "finalPJimg/1-3.webp"
+        ],
+        description: "มีระบบกรองฝุ่น 3 ชั้น (3 Stage Filtration System) ช่วยลดการฟุ้งกระจายของฝุ่น ความจุถังเก็บฝุ่น 0.4 ลิตร ถอดล้างได้ง่าย ตัวเครื่องขนาดกะทัดรัด (34.20 x 7.85 x 34.20 ซม.) เข้าถึงพื้นที่แคบได้ดี" 
+    },
+    { 
+        id: 3, 
+        name: "ถังขยะเซนเซอร์ 13 ลิตร พร้อมขาตั้งสเตนเลส Danin KASSA HOME รุ่น JAH9710 สีเงิน", 
+        price: 1180, 
+        category: "เครื่องใช้ไฟฟ้า", 
+        images: [
+            "finalPJimg/4-1.webp",
+            "finalPJimg/4-2.webp",
+            "finalPJimg/4-3.webp"
+        ],
+        description: "หลีกเลี่ยงการสัมผัสกับฝาถังขยะโดยตรง ด้วยถังขยะทรงเหลี่ยมพร้อมขาตั้ง และฟังก์ชันเซนเซอร์อัตโนมัติจาก KASSA HOME ผลิตจากสเตนเลสสตีล เกรด 430 และพลาสติก PP/ABS คุณภาพดี แข็งแรง ทนทานต่อการกัดกร่อน ใช้งานง่าย เพียงใช้มือหรือเท้าสัมผัสปากถัง ออกแบบมาเพื่อช่วยลดการสัมผัสกับสิ่งสกปรกหรือเชื้อโรค เพื่อสุขอนามัยที่ดีของคุณ" 
+    },
+    { 
+        id: 11, 
+        name: "ยางรีดน้ำกระจกชนิดยางคู่ BE MAN รุ่น A0120001 สีขาว - เทา", 
+        price: 108, 
+        category: "อุปกรณ์ทำความสะอาด", 
+        images: [
+            "finalPJimg/15-1.webp",
+            "finalPJimg/15-2.webp",
+            "finalPJimg/15-3.webp"
+        ],
+        description: "อุปกรณ์เช็ดทำความสะอาดกระจก ไม่ว่าจะเป็นกระจกรถยนต์ กระจกหน้าต่าง หรือกระจกประตูบ้าน ช่วยรีดน้ำ คราบแมลง หรือ ฝุ่นละอองต่างๆ ให้กระจกใสสะอาดได้อย่างหมดจด ช่วยประหยัดเวลา ไม่เปลืองแรง เพิ่มความสะดวกสบายในการทำความสะอาด" 
+    }
+]; 
 
 const promotions = [
     { id: 21, name: "Pack 10: ผ้าไมโครไฟเบอร์", price: 199, originalPrice: 350, images: ["https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?w=600"] },
@@ -495,6 +592,59 @@ function searchProducts() {
                 <button class="btn btn-primary rounded-pill mt-3" onclick="resetSearch()">แสดงสินค้าทั้งหมด</button>
             </div>`;
     }
+}
+
+function filterByCategory(categoryName) {
+    const productsContainer = document.getElementById('all-products-container');
+    const sectionTitle = document.querySelector('.section-title'); // หัวข้อ "สินค้าทั้งหมด"
+    
+    if (!productsContainer) return;
+
+    // กรองสินค้าตามหมวดหมู่ (category)
+    const filteredResults = allProducts.filter(item => item.category === categoryName);
+
+    if (filteredResults.length > 0) {
+        // เรนเดอร์สินค้าที่กรองได้
+        renderItems(filteredResults, 'all-products-container');
+        
+        // อัปเดตหัวข้อให้ผู้ใช้รู้ว่ากำลังดูหมวดหมู่ไหน
+        if (sectionTitle) sectionTitle.innerText = `หมวดหมู่: ${categoryName}`;
+        
+        // เปลี่ยนปุ่ม "ดูเพิ่มเติม" ให้กลายเป็นปุ่ม "แสดงทั้งหมด" แทนเพื่อความสะดวก
+        const btn = document.getElementById('view-more-btn');
+        if (btn) btn.innerHTML = 'แสดงสินค้าทั้งหมด <i class="fa-solid fa-rotate-left ms-2"></i>';
+        if (btn) btn.onclick = resetSearch;
+
+    } else {
+        productsContainer.innerHTML = `
+            <div class="col-12 text-center py-5">
+                <h5 class="text-muted">ไม่พบสินค้าในหมวดหมู่ "${categoryName}"</h5>
+                <button class="btn btn-primary rounded-pill mt-3" onclick="resetSearch()">แสดงสินค้าทั้งหมด</button>
+            </div>`;
+    }
+
+    // เลื่อนหน้าจอไปที่ส่วนแสดงสินค้า
+    document.getElementById('product-recommend-section').scrollIntoView({ behavior: 'smooth' });
+}
+
+// แก้ไขฟังก์ชัน resetSearch เพิ่มเติมเพื่อให้หัวข้อกลับมาเป็นเหมือนเดิม
+function resetSearch() {
+    const searchInput = document.getElementById('searchInput');
+    const sectionTitle = document.querySelector('.section-title');
+    const btn = document.getElementById('view-more-btn');
+
+    if (searchInput) searchInput.value = '';
+    if (sectionTitle) sectionTitle.innerText = 'สินค้าทั้งหมด';
+    
+    // รีเซ็ตปุ่มให้กลับเป็น toggleProducts เหมือนเดิม
+    if (btn) {
+        btn.innerHTML = 'ดูสินค้าเพิ่มเติม <i class="fa-solid fa-chevron-down ms-2"></i>';
+        btn.onclick = toggleProducts;
+    }
+
+    // แสดงแค่ 4 ชิ้นแรกตามค่าเริ่มต้น
+    const initialProducts = allProducts.slice(0, 4);
+    renderItems(initialProducts, 'all-products-container');
 }
 
 // ฟังก์ชันล้างการค้นหา

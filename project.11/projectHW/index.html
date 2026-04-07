@@ -14,7 +14,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top py-3 shadow-sm">
         <div class="container">
             <a class="navbar-brand logo" href="#">
-                <img src="finalPJimg/LOGO (2).png" alt="CleanHome Logo">
+                <img src="finalPJimg/LOGO1-removebg-preview.png" alt="CleanHome Logo">
             </a>
             <div class="ms-auto d-flex align-items-center order-lg-3">
                 <div class="cart-icon position-relative py-2 me-3" style="cursor: pointer;" onclick="showCart()">
@@ -37,7 +37,19 @@
                             <li><a class="dropdown-item" href="#promotion-section"><i class="fa-solid fa-tag text-success me-2"></i>โปรโมชั่น</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a class="nav-link px-3" href="#promotion-section">โปรโมชั่น</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link px-3 dropdown-toggle" href="#" id="categoryDropdown" role="button" data-bs-toggle="dropdown">
+                            หมวดหมู่สินค้า
+                        </a>
+                        <ul class="dropdown-menu border-0 shadow-lg custom-dropdown">
+                            <li><a class="dropdown-item" href="javascript:void(0)" onclick="filterByCategory('เครื่องใช้ไฟฟ้า')">เครื่องใช้ไฟฟ้า</a></li>
+                            <li><a class="dropdown-item" href="javascript:void(0)" onclick="filterByCategory('อุปกรณ์ภายในบ้าน')">อุปกรณ์ภายในบ้าน</a></li>
+                            <li><a class="dropdown-item" href="javascript:void(0)" onclick="filterByCategory('อุปกรณ์ทำความสะอาด')">อุปกรณ์ทำความสะอาด</a></li>
+                            <li><a class="dropdown-item" href="javascript:void(0)" onclick="filterByCategory('ผลิตภัณฑ์ทำความสะอาด')">ผลิตภัณฑ์ทำความสะอาด</a></li>
+                            <li><hr class="dropdown-divider opacity-25"></li>
+                            <li><a class="dropdown-item" href="javascript:void(0)" onclick="resetSearch()">แสดงทั้งหมด</a></li>
+                        </ul>
+                    </li>
                     <li class="nav-item"><a class="nav-link px-3" href="#contact-section">ติดต่อเรา</a></li>
                 </ul>
             </div>
@@ -194,7 +206,7 @@
             <div class="row gy-4 align-items-center text-center text-md-start">
                 <div class="col-md-4">
                     <a class="navbar-brand logo text-white mb-2 d-block" href="#">
-                        <img src="finalPJimg/LOGO (2).png" alt="CleanHome Logo">
+                        <img src="finalPJimg/LOGO1-removebg-preview.png" alt="CleanHome Logo">
                     </a>
                     <p class="small text-muted">ผู้นำอุปกรณ์ทำความสะอาดครบวงจร</p>
                 </div>
