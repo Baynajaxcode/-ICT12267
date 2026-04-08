@@ -12,27 +12,24 @@ html {
 
 body {
     font-family: 'Kanit', sans-serif;
-    background-color: var(--gray-light);
+    background: linear-gradient(135deg, #d6eaff 0%, #f1f7ff 100%);
+    background-attachment: fixed; /* ทำให้พื้นหลังอยู่กับที่เวลาเลื่อนหน้าจอ */
     color: #333;
     overflow-x: hidden;
+    min-height: 100vh;
 }
 
 /* --- 2. ส่วนหัวและโลโก้ --- */
 .logo {
-    font-size: 1.6rem;
-    font-weight: 700;
-    color: var(--primary-blue);
-    text-decoration: none;
-    transition: var(--transition);
-    position: relative; /* สร้างขอบเขตให้รูป */
-    display: inline-block;
+    display: flex;        /* จัดให้รูปเรียงกันในแนวนอน */
+    align-items: center;  /* จัดให้อยู่กึ่งกลางแนวตั้ง */
+    gap: 10px;           /* กำหนดระยะห่างระหว่างโลโก้ */
 }
 
 .logo img {
-    height: 50px; /* ปรับตัวเลขนี้ตามความใหญ่ที่ต้องการ เช่น 50px, 80px, 100px */
-    width: auto;  /* เพื่อให้รูปไม่เบี้ยว */
-    position: absolute;       /* ทำให้รูปลอยออกมา ไม่ดัน Navbar */
-    top: -23px;
+    height: 50px;         /* ปรับความสูงตามต้องการ */
+    width: auto;
+    position: relative;   /* เปลี่ยนเพื่อให้รูปเรียงต่อกันได้ */
 }
 
 .logo:hover { opacity: 0.8; }
@@ -100,9 +97,8 @@ body {
     overflow: hidden;
     
     /* เพิ่มส่วนนี้เพื่อบังคับเป็นจัตุรัส */
-    width: 100%;
-    aspect-ratio: 1 / 1; 
-    
+    width: 100%; 
+    min-height: 250px;
     /* จัดรูปให้อยู่ตรงกลาง */
     display: flex;
     align-items: center;
@@ -113,10 +109,7 @@ body {
 .img-wrapper img {
     width: 100%;
     height: 100%;
-    
-    /* เปลี่ยนจาก cover เป็น contain เพื่อให้เห็นรูปครบทั้งใบ ไม่โดนตัดขอบ */
-    object-fit: contain; 
-    
+    object-fit: contain; /* เปลี่ยนจาก cover เป็น contain เพื่อให้เห็นรูปครบทั้งใบ ไม่โดนตัดขอบ */
     transition: transform 0.5s ease;
 }
 

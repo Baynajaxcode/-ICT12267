@@ -294,10 +294,10 @@ const bestSellers = [
 ]; 
 
 const promotions = [
-    { id: 21, name: "Pack 10: ผ้าไมโครไฟเบอร์", price: 199, originalPrice: 350, images: ["https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?w=600"] },
-    { id: 22, name: "Set: น้ำยาซัก+ปรับผ้านุ่ม", price: 250, originalPrice: 390, images: ["https://images.unsplash.com/photo-1558523038-0812256f5055?w=600"] },
-    { id: 23, name: "เครื่องล้างจานลดล้างสต็อก", price: 12000, originalPrice: 18000, images: ["https://images.unsplash.com/photo-1584622781564-1d9876a13d00?w=600"] },
-    { id: 24, name: "สเปรย์ฆ่าเชื้อ Portable", price: 490, originalPrice: 850, images: ["https://images.unsplash.com/photo-1618219944342-824e40a13285?w=600"] }
+    { id: 21, name: "Pack 4: ผ้าไมโครไฟเบอร์ทำความสะอาดอเนกประสงค์ ACCO", price: 139, originalPrice: 189, category: "อุปกรณ์ทำความสะอาด", images: ["finalPJimg/25-1.jpg","finalPJimg/25-2.jpg"], description: "อุปกรณ์เช็ดทำความสะอาดกระจก ไม่ว่าจะเป็นกระจกรถยนต์ กระจกหน้าต่าง หรือกระจกประตูบ้าน ช่วยรีดน้ำ คราบแมลง หรือ ฝุ่นละอองต่างๆ ให้กระจกใสสะอาดได้อย่างหมดจด ช่วยประหยัดเวลา ไม่เปลืองแรง เพิ่มความสะดวกสบายในการทำความสะอาด" },
+    { id: 22, name: "เครื่องดูดฝุ่นมือถือ ELECTROLUX รุ่น ZB6218STM กำลัง 18 โวลต์ สีสเปซทีลเมทัลลิก", price: 3090, originalPrice: 3990, category: "เครื่องใช้ไฟฟ้า", images: ["finalPJimg/26-1.webp","finalPJimg/26-2.webp"], description: "ให้การทำความสะอาดเป็นเรื่องง่ายสะดวกสบายยิ่งขึ้น ด้วยเครื่องดูดฝุ่นมือถือ ELECTROLUX ประสิทธิภาพสูง ใช้งานได้ยาวนานด้วยแบตเตอรี่ TurboPower หัวดูดซอกซอน เข้าถึงได้ทุกซอกมุม ดูดได้อย่างแม่นยำด้วยระบบดูดแบบไซโคลน ช่วยให้คุณเบาแรงในการทำความสะอาด ใช้ดูดเศษสิ่งสกปรกในลิ้นชักหรือบนเบาะรถยนต์ได้อย่างหมดจด" },
+    { id: 23, name: "น้ำยาฆ่าเชื้อโรคเอนกประสงค์ ไฮยีนมัลติ-ยูส DETTOL ขนาด 750 มล. สีเหลือง", price: 409, originalPrice: 479, category: "ผลิตภัณฑ์ทำความสะอาด", images: ["finalPJimg/27-1.webp","finalPJimg/27-2.webp"], description: "ผู้ช่วยมือฉกาจในการฆ่าเชื้อโรค เชื้อราได้เกือบ 100% ให้พื้นบ้าน พื้นห้องน้ำ รวมถึงอุปกรณ์ในห้องน้ำสะอาด ปราศจากเชื้อโรค และยังสามารถใช้ซักผ้าได้ เพื่อสุขภาพที่ดีของคุณและทุกคนในครอบครัว" },
+    { id: 24, name: "เครื่องดูดฝุ่นโรบอต SAMSUNG รุ่น VR30T85513W/ST กำลัง 5 วัตต์ สีขาว", price: 14994, originalPrice: 21099, category: "เครื่องใช้ไฟฟ้า", images: ["finalPJimg/28-1.webp","finalPJimg/28-2.webp"], description: "โรบอตทำความสะอาด Jet Bot มีแท่นชาร์จแบตพร้อมทิ้งฝุ่นอัตโนมัติ ดักจับฝุ่นได้ 99.999% High - Efficiency Brush พร้อมที่บดและตัดเส้นผมลดการพันกันของผมหรือขนสัตว์ เลือกพื้นที่การทำความสะอาดได้ ควบคุมการทำงานผ่านแอปพลิเคชัน ให้คุณเพลิดเพลินไปกับการทำความสะอาดที่ทรงพลังมากกว่าเดิม" }
 ];
 
 // ================== 2. ระบบจัดการสถานะ (State) ==================
@@ -609,11 +609,6 @@ function filterByCategory(categoryName) {
         
         // อัปเดตหัวข้อให้ผู้ใช้รู้ว่ากำลังดูหมวดหมู่ไหน
         if (sectionTitle) sectionTitle.innerText = `หมวดหมู่: ${categoryName}`;
-        
-        // เปลี่ยนปุ่ม "ดูเพิ่มเติม" ให้กลายเป็นปุ่ม "แสดงทั้งหมด" แทนเพื่อความสะดวก
-        const btn = document.getElementById('view-more-btn');
-        if (btn) btn.innerHTML = 'แสดงสินค้าทั้งหมด <i class="fa-solid fa-rotate-left ms-2"></i>';
-        if (btn) btn.onclick = resetSearch;
 
     } else {
         productsContainer.innerHTML = `
@@ -636,7 +631,7 @@ function resetSearch() {
     if (searchInput) searchInput.value = '';
     if (sectionTitle) sectionTitle.innerText = 'สินค้าทั้งหมด';
     
-    // รีเซ็ตปุ่มให้กลับเป็น toggleProducts เหมือนเดิม
+    // คืนค่าปุ่มให้กลับไปใช้ toggleProducts
     if (btn) {
         btn.innerHTML = 'ดูสินค้าเพิ่มเติม <i class="fa-solid fa-chevron-down ms-2"></i>';
         btn.onclick = toggleProducts;
