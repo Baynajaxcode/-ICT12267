@@ -113,6 +113,45 @@ body {
     transition: transform 0.5s ease;
 }
 
+/* --- สไตล์ปุ่ม Wishlist --- */
+.btn-wishlist {
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.btn-wishlist:hover {
+    transform: scale(1.1);
+    background-color: #fff0f0 !important;
+}
+
+.btn-wishlist i {
+    font-size: 1.1rem;
+    transition: color 0.2s ease;
+}
+
+/* ทำให้การ์ดสินค้าไม่เลื่อนเวลาคลิกหัวใจ */
+.product-card {
+    position: relative;
+    overflow: visible;
+}
+
+/* --- การ์ดทริป --- */
+.tip-card {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important; /* เพิ่มบรรทัดนี้เพื่อลบเงาออกในตอนแรก */
+}
+
+.tip-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1) !important;
+}
+
+.bg-info-subtle {
+    background-color: transparent !important;
+}
+
 /* --- ลูกศรบนการ์ดสินค้าหน้าแรก --- */
 .card-arrows {
     position: absolute;

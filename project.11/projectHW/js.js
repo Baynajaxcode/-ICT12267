@@ -293,6 +293,30 @@ const bestSellers = [
     }
 ]; 
 
+const cleaningTips = [
+    {
+        id: 1,
+        title: "เคล็ดลับการถูพื้นให้สะอาดกริ๊บ: เปลี่ยนพื้นบ้านให้เงาวับ ไร้คราบเหนียว",
+        desc: "การถูพื้นอาจดูเป็นงานบ้านธรรมดา แต่หลายคนมักเจอปัญหา ยิ่งถูยิ่งมัว หรือ แห้งแล้วเป็นรอยเท้า....",
+        fullContent: "การเนรมิตพื้นบ้านให้สะอาดกริ๊บไร้คราบเริ่มต้นจากการกำจัดฝุ่นและเศษผงด้วยการดูดฝุ่นหรือกวาดให้เกลี้ยงเพื่อไม่ให้ฝุ่นกลายเป็นคราบโคลนเมื่อสัมผัสน้ำ จากนั้นให้ผสมน้ำยาถูพื้นในปริมาณที่พอเหมาะตามสัดส่วนที่ระบุเพื่อป้องกันพื้นเหนียวเหนอะหนะ โดยอาจเติมน้ำส้มสายชูลงไปเล็กน้อยเพื่อช่วยขจัดคราบมันและทำให้พื้นเงางามยิ่งขึ้น ในขณะถูควรใช้เทคนิคการลากม็อบเป็นรูปเลข 8 และเริ่มถูจากมุมในสุดถอยหลังออกมาหาประตูเพื่อป้องกันการเหยียบทับพื้นที่เพิ่งทำความสะอาด ที่สำคัญต้องขยันซักผ้าม็อบบ่อยๆ ไม่ให้สิ่งสกปรกสะสม และขั้นตอนที่เป็นหัวใจสำคัญคือการใช้ผ้าม็อบแห้งเช็ดซ้ำทันทีหลังถูเปียกเพื่อกำจัดคราบน้ำและปิดท้ายด้วยการเปิดพัดลมให้อากาศถ่ายเท เพียงเท่านี้พื้นบ้านของคุณก็จะแห้งไว สัมผัสสบายเท้า และเงาวับเหมือนใหม่โดยไม่มีรอยด่างให้กวนใจแน่นอน", 
+        image: "finalPJimg/t1.avif"
+    },
+    {
+        id: 2,
+        title: "การดูแลรักษาหุ่นยนต์ดูดฝุ่นอย่างถูกวิธี",
+        desc: "การดูแลรักษาหุ่นยนต์ดูดฝุ่นอย่างถูกวิธีเป็นหัวใจสำคัญที่ช่วยให้เครื่องทำงานได้เต็มประสิทธิภาพและมีอายุการใช้งานที่ยาวนาน....",
+        fullContent: "การดูแลหุ่นยนต์ดูดฝุ่นให้พร้อมใช้งานอยู่เสมอนั้น คุณควรเริ่มต้นด้วยการหมั่นเทขยะออกจากกล่องเก็บฝุ่นและเคาะทำความสะอาดฟิลเตอร์กรองอากาศทุกครั้งหลังเสร็จสิ้นภารกิจเพื่อไม่ให้มอเตอร์ทำงานหนักจนเกินไป พร้อมทั้งตรวจสอบชุดแปรงหมุนด้านล่างและแปรงปัดข้างเพื่อดึงเศษเส้นผมหรือใยด้ายที่พันอยู่ออกอย่างสม่ำเสมอ ซึ่งจะช่วยป้องกันไม่ให้มอเตอร์ค้างหรือทำงานติดขัด นอกจากนี้ควรใช้ผ้าไมโครไฟเบอร์แห้งเช็ดทำความสะอาดเซนเซอร์รอบตัวเครื่องและขั้วชาร์จไฟที่ตัวหุ่นยนต์กับแท่นชาร์จเพื่อป้องกันปัญหาเครื่องเดินหลงทิศทางหรือชาร์จไฟไม่เข้า ที่สำคัญคือการดูแลแบตเตอรี่โดยการปล่อยให้เครื่องชาร์จจนเต็มและไม่ควรปล่อยให้แบตเตอรี่หมดเกลี้ยงเป็นเวลานาน รวมถึงการหมั่นอัปเดตเฟิร์มแวร์ผ่านแอปพลิเคชันให้เป็นเวอร์ชันล่าสุดเสมอ เพื่อให้ระบบการนำทางและฟังก์ชันการทำงานต่างๆ ของหุ่นยนต์ยังคงแม่นยำและคุ้มค่ากับความพยายามในการดูแลบ้านแทนคุณ", 
+        image: "finalPJimg/t2.jpg"
+    },
+    {
+        id: 3,
+        title: "วิธีเช็ดกระจกให้ใสกิ๊ง เงาวับ",
+        desc: "การทำความสะอาดกระจกให้ใสสะอาดราวกระจกเงาและไร้รอยขีดข่วนเป็นงานที่ต้องอาศัยเทคนิคมากกว่าแค่การฉีดน้ำยาแล้วเช็ด เพราะการใช้อุปกรณ์ที่ไม่เหมาะสมมักจะทิ้งคราบขุ่นมัวหรือเศษละอองผ้าไว้ให้กวนใจอยู่เสมอ....",
+        fullContent: "การเช็ดกระจกให้ใสกริ๊บนั้นเริ่มต้นจากการเลือกน้ำยาทำความสะอาดที่เหมาะสม โดยคุณสามารถผสมน้ำยาล้างจานเจือจางหรือใช้น้ำส้มสายชูผสมน้ำเปล่าเพื่อช่วยสลายคราบมันและคราบน้ำได้อย่างดีเยี่ยม จากนั้นควรใช้ผ้าไมโครไฟเบอร์หรืออุปกรณ์ปาดน้ำ (Squeegee) แทนการใช้ผ้าคอตตอนทั่วไปเพื่อป้องกันการทิ้งขุยผ้าไว้บนพื้นผิว โดยเทคนิคที่สำคัญคือการเช็ดเป็นรูปตัว S จากบนลงล่างเพื่อไล่สิ่งสกปรกอย่างเป็นระบบ และหากพบคราบฝังแน่นควรเช็ดออกล่วงหน้าด้วยผ้าหมาดก่อนจะลงน้ำยาจริง ที่สำคัญควรหลีกเลี่ยงการเช็ดกระจกในขณะที่มีแสงแดดจัดเพราะน้ำยาจะแห้งไวเกินไปจนเกิดคราบด่าง และปิดท้ายด้วยการใช้หนังสือพิมพ์เก่าหรือผ้าแห้งสนิทเช็ดวนซ้ำอีกครั้งเพื่อเก็บความชื้นส่วนเกิน ซึ่งจะช่วยเนรมิตให้กระจกของคุณใสสะอาดแวววาวและดูเหมือนใหม่อยู่ตลอดเวลา", 
+        image: "finalPJimg/t3.png"
+    },
+];
+
 const promotions = [
     { id: 21, name: "Pack 4: ผ้าไมโครไฟเบอร์ทำความสะอาดอเนกประสงค์ ACCO", price: 139, originalPrice: 189, category: "อุปกรณ์ทำความสะอาด", images: ["finalPJimg/25-1.jpg","finalPJimg/25-2.jpg"], description: "อุปกรณ์เช็ดทำความสะอาดกระจก ไม่ว่าจะเป็นกระจกรถยนต์ กระจกหน้าต่าง หรือกระจกประตูบ้าน ช่วยรีดน้ำ คราบแมลง หรือ ฝุ่นละอองต่างๆ ให้กระจกใสสะอาดได้อย่างหมดจด ช่วยประหยัดเวลา ไม่เปลืองแรง เพิ่มความสะดวกสบายในการทำความสะอาด" },
     { id: 22, name: "เครื่องดูดฝุ่นมือถือ ELECTROLUX รุ่น ZB6218STM กำลัง 18 โวลต์ สีสเปซทีลเมทัลลิก", price: 3090, originalPrice: 3990, category: "เครื่องใช้ไฟฟ้า", images: ["finalPJimg/26-1.webp","finalPJimg/26-2.webp"], description: "ให้การทำความสะอาดเป็นเรื่องง่ายสะดวกสบายยิ่งขึ้น ด้วยเครื่องดูดฝุ่นมือถือ ELECTROLUX ประสิทธิภาพสูง ใช้งานได้ยาวนานด้วยแบตเตอรี่ TurboPower หัวดูดซอกซอน เข้าถึงได้ทุกซอกมุม ดูดได้อย่างแม่นยำด้วยระบบดูดแบบไซโคลน ช่วยให้คุณเบาแรงในการทำความสะอาด ใช้ดูดเศษสิ่งสกปรกในลิ้นชักหรือบนเบาะรถยนต์ได้อย่างหมดจด" },
@@ -306,22 +330,142 @@ let currentImgIndex = 0;
 let currentProductId = null;
 
 // ================== 3. ระบบเรนเดอร์หน้าเว็บ (แถวละ 4 รูป) ==================
+// --- เพิ่มตัวแปรสถานะที่ส่วนบนของไฟล์ ---
+let wishlist = []; //
+
+// --- ฟังก์ชันจัดการ Wishlist ---
+function toggleWishlist(productId) {
+    const index = wishlist.indexOf(productId);
+    const allAvailable = [...allProducts, ...bestSellers, ...promotions];
+    const item = allAvailable.find(p => p.id === productId);
+
+    if (index === -1) {
+        wishlist.push(productId);
+        alert(`เพิ่ม "${item.name}" ลงในรายการที่ชอบแล้ว`);
+    } else {
+        wishlist.splice(index, 1);
+        alert(`นำ "${item.name}" ออกจากรายการที่ชอบแล้ว`);
+    }
+    
+    // เรนเดอร์สินค้าใหม่เพื่ออัปเดตสีไอคอนหัวใจ
+    renderItems(allProducts.slice(0, document.getElementById('all-products-container').children.length > 4 ? allProducts.length : 4), 'all-products-container');
+    renderItems(bestSellers.slice(0, 4), 'best-seller-container', true);
+    renderPromotions();
+}
+
+// --- ฟังก์ชันสำหรับเปิดหน้าต่าง Wishlist (วางต่อท้าย toggleWishlist ได้เลย) ---
+function showWishlistModal() {
+    updateWishlistUI(); 
+    const wishlistModal = new bootstrap.Modal(document.getElementById('wishlistModal'));
+    wishlistModal.show();
+}
+
+function updateWishlistUI() {
+    const wishlistList = document.getElementById('wishlist-items-list');
+    if (!wishlistList) return;
+
+    const allAvailable = [...allProducts, ...bestSellers, ...promotions];
+    
+    // กรองสินค้าที่ถูกใจ
+    const favoriteProducts = allAvailable.filter((item, index, self) => 
+        wishlist.includes(item.id) && self.findIndex(t => t.id === item.id) === index
+    );
+
+    if (favoriteProducts.length === 0) {
+        wishlistList.innerHTML = `
+            <div class="text-center py-4">
+                <i class="fa-regular fa-heart fa-3x text-light mb-3"></i>
+                <p class="text-muted">ยังไม่มีรายการที่ชอบ</p>
+            </div>`;
+    } else {
+        wishlistList.innerHTML = favoriteProducts.map((item) => `
+            <div class="d-flex align-items-center mb-3 pb-3 border-bottom text-start">
+                <img src="${item.images[0]}" width="60" height="60" class="rounded me-3" style="object-fit:contain; background:#f8f9fa;">
+                <div class="flex-grow-1">
+                    <div class="fw-bold small text-truncate" style="max-width:180px">${item.name}</div>
+                    <div class="text-primary fw-bold">฿${item.price.toLocaleString()}</div>
+                </div>
+                <div class="d-flex gap-2">
+                    <button class="btn btn-sm btn-outline-primary rounded-pill" onclick="addToCart(${item.id})">
+                        <i class="fas fa-cart-plus"></i>
+                    </button>
+                    <button class="btn btn-sm text-danger" onclick="toggleWishlist(${item.id}); updateWishlistUI();">
+                        <i class="fas fa-trash"></i>
+                    </button>
+                </div>
+            </div>
+        `).join('');
+    }
+}
+
+// --- แก้ไขฟังก์ชัน renderItems ให้มีปุ่มหัวใจ ---
 function renderItems(data, containerId, isHot = false) {
     const container = document.getElementById(containerId);
     if (!container) return;
-    // col-lg-3 คือการกำหนดให้จอใหญ่โชว์ 4 คอลัมน์ (12/3 = 4)
-    container.innerHTML = data.map(item => `
-        <div class="col-6 col-md-4 col-lg-3 d-flex align-items-stretch mb-4">
-            <div class="card product-card shadow-sm p-3 text-center w-100 border-0" onclick="showProductDetail(${item.id})" style="cursor: pointer; position: relative;">
-                ${isHot ? '<span class="best-seller-badge" style="position:absolute; top:10px; right:10px; background:red; color:white; padding:2px 8px; border-radius:10px; font-size:10px; z-index:2;"><i class="fas fa-crown"></i> HOT</span>' : ''}
-                <div class="img-wrapper mb-3" style="aspect-ratio: 1/1; height: auto; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #f8f9fa; border-radius: 12px;">
-                    <img src="${item.images[0]}" class="card-img-top" style="object-fit: contain; width: 100%; height: 100%; padding: 10px;">
+    
+    container.innerHTML = data.map(item => {
+        const isLiked = wishlist.includes(item.id);
+        return `
+            <div class="col-6 col-md-4 col-lg-3 d-flex align-items-stretch mb-4">
+                <div class="card product-card shadow-sm p-3 text-center w-100 border-0" style="position: relative;">
+                    <button class="btn-wishlist" onclick="event.stopPropagation(); toggleWishlist(${item.id})" 
+                            style="position: absolute; top: 15px; left: 15px; z-index: 10; border: none; background: white; border-radius: 50%; width: 35px; height: 35px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+                        <i class="${isLiked ? 'fa-solid' : 'fa-regular'} fa-heart ${isLiked ? 'text-danger' : 'text-secondary'}"></i>
+                    </button>
+
+                    <div onclick="showProductDetail(${item.id})" style="cursor: pointer;">
+                        ${isHot ? '<span class="best-seller-badge" style="position:absolute; top:10px; right:10px; background:red; color:white; padding:2px 8px; border-radius:10px; font-size:10px; z-index:2;"><i class="fas fa-crown"></i> HOT</span>' : ''}
+                        <div class="img-wrapper mb-3" style="aspect-ratio: 1/1; height: auto; overflow: hidden; display: flex; align-items: center; justify-content: center; background: #f8f9fa; border-radius: 12px;">
+                            <img src="${item.images[0]}" class="card-img-top" style="object-fit: contain; width: 100%; height: 100%; padding: 10px;">
+                        </div>
+                        <h6 class="fw-bold mb-1 text-dark text-truncate px-2">${item.name}</h6>
+                        <p class="text-primary fw-bold mb-0">฿${item.price.toLocaleString()}</p>
+                    </div>
                 </div>
-                <h6 class="fw-bold mb-1 text-dark text-truncate px-2">${item.name}</h6>
-                <p class="text-primary fw-bold mb-0">฿${item.price.toLocaleString()}</p>
+            </div>
+        `;
+    }).join('');
+}
+
+// --- แก้ไขฟังก์ชัน renderTips ให้ปิด Syntax ให้ถูกต้อง ---
+function renderTips() {
+    const container = document.getElementById('tips-container');
+    if (!container) return;
+    
+    container.innerHTML = cleaningTips.map(tip => `
+        <div class="col-md-6 col-lg-4 d-flex align-items-stretch mb-4">
+            <div class="card h-100 border-0 bg-transparent tip-card" 
+                 onclick="showTipDetail(${tip.id})" style="cursor: pointer;">
+                <img src="${tip.image}" class="card-img-top rounded-4" style="height: 220px; object-fit: cover;">
+                <div class="card-body p-4 text-start">
+                    <h5 class="fw-bold mb-3">${tip.title}</h5>
+                    <p class="text-muted small text-truncate-3">${tip.desc}</p>
+                    <span class="text-primary fw-bold small">อ่านเพิ่มเติม <i class="fa-solid fa-arrow-right ms-1"></i></span>
+                </div>
             </div>
         </div>
-    `).join('');
+    `).join(''); // ปิด Backtick และวงเล็บให้เรียบร้อย
+} // ปิดปีกกาของฟังก์ชัน renderTips ที่คุณทำตกไป
+
+function showTipDetail(tipId) {
+    const tip = cleaningTips.find(t => t.id === tipId);
+    if (!tip) return;
+
+    const contentContainer = document.getElementById('tip-detail-content');
+    contentContainer.innerHTML = `
+        <div class="p-0">
+            <img src="${tip.image}" class="img-fluid w-100" style="max-height: 400px; object-fit: cover;">
+            <div class="p-4 p-md-5">
+                <h2 class="fw-bold mb-4">${tip.title}</h2>
+                <div class="text-secondary lh-lg">
+                    ${tip.fullContent || tip.desc} 
+                </div>
+            </div>
+        </div>
+    `;
+
+    const tipModal = new bootstrap.Modal(document.getElementById('tipDetailModal'));
+    tipModal.show();
 }
 
 function renderPromotions() {
@@ -685,7 +829,8 @@ document.addEventListener('DOMContentLoaded', () => {
     renderItems(initialProducts, 'all-products-container');
     renderPromotions();
     updateCartCount();
-
+    renderTips();
+    
     // 2. ระบบค้นหา (Search System)
     const searchInput = document.getElementById('searchInput');
     if (searchInput) {
