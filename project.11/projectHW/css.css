@@ -42,6 +42,18 @@ body {
     border-radius: 0 0 30px 30px;
 }
 
+/* สไตล์เพิ่มเติมสำหรับเมนูสมาชิกกลุ่ม */
+.nav-link.border-primary:hover {
+    background-color: var(--primary-blue);
+    color: white !important;
+    transition: var(--transition);
+}
+
+/* จัดการระยะขอบเวลาเลื่อน (Scroll Margin) */
+.scroll-margin {
+    scroll-margin-top: 100px;
+}
+
 /* --- 3. ส่วนค้นหา --- */
 .search-container {
     max-width: 450px;

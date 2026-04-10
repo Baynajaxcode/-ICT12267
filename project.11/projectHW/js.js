@@ -324,6 +324,13 @@ const promotions = [
     { id: 24, name: "เครื่องดูดฝุ่นโรบอต SAMSUNG รุ่น VR30T85513W/ST กำลัง 5 วัตต์ สีขาว", price: 14994, originalPrice: 21099, category: "เครื่องใช้ไฟฟ้า", images: ["finalPJimg/28-1.webp","finalPJimg/28-2.webp"], description: "โรบอตทำความสะอาด Jet Bot มีแท่นชาร์จแบตพร้อมทิ้งฝุ่นอัตโนมัติ ดักจับฝุ่นได้ 99.999% High - Efficiency Brush พร้อมที่บดและตัดเส้นผมลดการพันกันของผมหรือขนสัตว์ เลือกพื้นที่การทำความสะอาดได้ ควบคุมการทำงานผ่านแอปพลิเคชัน ให้คุณเพลิดเพลินไปกับการทำความสะอาดที่ทรงพลังมากกว่าเดิม" }
 ];
 
+const teamMembers = [
+    { id: "68089078", name: "น.ส.ลักขณา  ป้อมยุคล", img: "finalPJimg/member11.png" },
+    { id: "68078466", name: "นายภัทรพล  สงทอง", img: "finalPJimg/member22.png" },
+    { id: "68082011", name: "นายธนกฤต  ทิพวัฒน์", img: "finalPJimg/member33.png" },
+    { id: "68079865", name: "นายอภิชัย  เทพรักษ์", img: "finalPJimg/member44.png" }
+];
+
 // ================== 2. ระบบจัดการสถานะ (State) ==================
 let cart = [];
 let currentImgIndex = 0;
@@ -697,6 +704,24 @@ function confirmPayment() {
     bootstrap.Modal.getInstance(document.getElementById('cartModal')).hide();
 }
 
+function renderTeam() {
+    const container = document.getElementById('team-container');
+    if (!container) return;
+
+    container.innerHTML = teamMembers.map(member => `
+        <div class="col-6 col-md-4 col-lg-3"> <div class="card border-0 shadow-sm h-100 p-2 text-center" style="border-radius: 15px; background: white;">
+                <div style="aspect-ratio: 3/4; overflow: hidden; border-radius: 12px;">
+                    <img src="${member.img}" class="w-100 h-100" style="object-fit: cover; object-position: top;" alt="${member.name}">
+                </div>
+                <div class="card-body px-0 pb-1 pt-3">
+                    <h6 class="fw-bold mb-1" style="font-size: 0.95rem;">${member.name}</h6>
+                    <p class="text-primary mb-0" style="font-size: 0.8rem; font-weight: 500;">ID: ${member.id}</p>
+                </div>
+            </div>
+        </div>
+    `).join('');
+}
+
 // ================== 6. เริ่มต้นระบบ ==================
 document.addEventListener('DOMContentLoaded', () => {
     renderItems(bestSellers, 'best-seller-container', true);
@@ -830,6 +855,7 @@ document.addEventListener('DOMContentLoaded', () => {
     renderPromotions();
     updateCartCount();
     renderTips();
+    renderTeam();
     
     // 2. ระบบค้นหา (Search System)
     const searchInput = document.getElementById('searchInput');
